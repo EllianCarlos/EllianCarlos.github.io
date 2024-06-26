@@ -2,9 +2,9 @@ hidden=[".config"]
 modules = ["nodejs-20"]
 
 # hosting is currently hardcoded for this language
-# [hosting]
-# route = "/"
-# directory= "/"
+[hosting]
+ route = "/"
+ directory= "/"
 
 [nix]
 channel = "stable-22_11"
