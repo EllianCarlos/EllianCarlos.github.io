@@ -4,7 +4,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
 
   // Copy the `public` directory to the output
+  eleventyConfig.addPassthroughCopy("src/style.css");
   eleventyConfig.addPassthroughCopy("public");
+  // Copy the `styles` directory to the output
 
   return {
     dir: {

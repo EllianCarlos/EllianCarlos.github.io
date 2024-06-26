@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<html data-theme="dark">
+<html data-theme="dark" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark" />
   <title>blogellian</title>
-  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+/>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    :root {
+      --pico-font-family: "Montserrat", sans-serif;
+      --pico-font-weight: 500;
+      --pico-typography-spacing-vertical: 0.4rem;
+    }
+
+    a.title {
+      --pico-text-decoration: none;
+      --pico-color: #7569DA;
+    }
+
+    a.title:hover {
+      --pico-text-decoration: none;
+      --pico-color: #DA7569;
+    }
+    
+  </style>
 </head>
 <body>
     {% include "header.njk" %}
-    <main>
+    <main class="container-fluid">
         {{ content | safe }}
     </main>
     {% include "footer.njk" %}

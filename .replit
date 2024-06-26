@@ -180,3 +180,7 @@ pattern = "**/{*.less,*.scss,*.css}"
 
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", ".config"]
+
+[[ports]]
+localPort = 8080
+externalPort = 80
