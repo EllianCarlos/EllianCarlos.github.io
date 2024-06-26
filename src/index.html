@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>blogellian</title>
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/blog.html">Blog</a></li>
+        <li><a href="pages/about.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="intro">
+      <h1>Welcome to My Personal Blog</h1>
+      <p>Sharing thoughts, ideas, and stories.</p>
+      <a href="#blog" class="button">Read the Blog</a>
+    </section>
+
+    <section id="blog">
+      <h2>Latest Posts</h2>
+      <div hx-get="blog.html" hx-trigger="load" hx-target="#blog-posts"></div>
+      <div id="blog-posts"></div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>&copy; 2024 My Personal Blog. All rights reserved.</p>
+  </footer>
+
+  <!--
+  This script is all that's necessary to get htmx working on this page! Note
+  that you'll need to include this script on every page that uses htmx.
+  -->
+  <!-- <script src="https://unpkg.com/htmx.org@1.9.3" crossorigin="anonymous"></script> -->
+  <script src="script.js"></script>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
