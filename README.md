@@ -2,7 +2,15 @@
 # My website!
 Heey
 
-# 
+# Tools Needed
 
-# Build Website
-`pnpm install && pnpm run build`
+You just need nix with nix flakes enabled. I cannot tell you how to run this with nix flakes yet because although I'm using, I'm still learning.
+
+# Developing
+
+To start developing is as easy as doing a:
+```sh
+nix develop
+```
+
+Then to create a production build `pnpm run build` and to create a server watching the changes `pnpm run start`
