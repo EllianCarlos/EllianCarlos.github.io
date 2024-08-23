@@ -1,4 +1,12 @@
 {
+  "name": "eleventy-website",
+  "version": "1.0.0",
+  "description": "An Eleventy website built with pnpm",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "clean": "rm -rf _site"
+  },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1"
   }
