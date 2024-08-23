@@ -5,7 +5,7 @@
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve",
-    "clean": "rm -rf _site"
+    "clean": "rm -rf dist"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1"

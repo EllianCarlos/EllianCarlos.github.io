@@ -5,29 +5,49 @@ html {
   width: 100%;
 }
 
-#intro {
-  text-align: center;
-  padding: 2rem;
-}
-
-#blog-posts {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 :root {
   --pico-font-family: "Montserrat", sans-serif;
   --pico-font-weight: 400;
   --pico-typography-spacing-vertical: 0.5rem;
 }
 
-.title {
-  text-decoration: none !important;
-  color: #007bff !important;
+.maintitle {
+  --pico-text-decoration: none;
+  --pico-color: var(--pico-primary);
+  color: var(--pico-contrast);
+  display: inline-block;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
+a.maintitle:hover {
+  --pico-text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.maintitle:hover {
+  animation: shake 0.30s 2;
+  display: inline-block;
+}
+
+@keyframes shake {
+ 0% { transform: translateX(0) }
+ 12% { transform: translateX(2px) }
+ 25% { transform: translateX(-2px) }
+ 50% { transform: translateX(2px) }
+ 66% { transform: translateX(-2px) }
+ 75% { transform: translateX(2px) }
+ 82% { transform: translateX(-2px) }
+ 100% { transform: translateX(0) }
+}
+
+.goto {
+  display: none;
+}
+
+.primary {
+  color: var(--pico-primary);
+}
+
+.contrast {
+  color: limegreen;
 }
