@@ -1,3 +1,7 @@
+---
+relative_path: '.'
+type: index 
+---
 <!DOCTYPE html>
 <html data-theme="dark" lang="en">
 
@@ -12,14 +16,17 @@
 >
   <link 
       rel="stylesheet"
-      href="style.css"
+      href="{{relative_path}}/styles/style.css"
       >
+  {% if type == "blog" %}
+    <link rel="stylesheet" href="{{relative_path}}/styles/blog.css">
+  {% endif %}
 </head>
-<body>
-    {% include "header.njk" %}
-    <main class="container">
+<body style="min-height: 100%;">
+    {% include "header.html" %}
+    <main class="container page">
         {{ content | safe }}
     </main>
-    {% include "footer.njk" %}
+    {% include "footer.html" %}
 </body>
 </html>

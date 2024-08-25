@@ -5,10 +5,21 @@ html {
   width: 100%;
 }
 
+html body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: start;
+}
+
 :root {
   --pico-font-family: "Montserrat", sans-serif;
   --pico-font-weight: 400;
   --pico-typography-spacing-vertical: 0.5rem;
+}
+
+.nodec {
+  --pico-text-decoration: none;
+  text-decoration: none;
 }
 
 .maintitle {
@@ -50,4 +61,13 @@ a.maintitle:hover {
 
 .contrast {
   color: limegreen;
+}
+
+footer {
+  --pico-font-size: 0.875em;
+  --pico-font-weight: 400;
+  --pico-typography-spacing-vertical: 0.5rem;
+  font-weight: 400;
+  font-size: 0.875em;
+  bottom: 0;
 }
